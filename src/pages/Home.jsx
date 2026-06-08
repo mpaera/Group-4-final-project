@@ -36,7 +36,7 @@ function Home() {
       {isLoading && <p>Loading event board...</p>}
       {error && <p className="error">{error}</p>}
       
-      {/* Dynamic List Rendering handled through props */}
+      
       {!isLoading && !error && <ProjectList projects={events} />}
     </div>
   );
