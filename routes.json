@@ -1,0 +1,8 @@
+{
+  "/api/events": "/events",
+  "/api/events/:id": "/events/:id",
+  "/api/categories": "/categories",
+  "/api/bookings": "/bookings",
+  "/featured-events": "/events?status=In%20Progress",
+  "/upcoming-events": "/events?date_gte=2024-07-01"
+}
