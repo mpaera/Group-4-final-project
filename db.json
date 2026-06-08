@@ -1,1 +1,37 @@
-{"events":[{"id":"1","title":"Corporate Office Network Setup","description":"Network configuration","status":"In Progress","date":"2024-07-15","location":"Downtown Center","category":"Workshop","price":149,"availableSeats":45},{"id":"2","title":"Annual Hackathon Launch","description":"Venue coordination","status":"In Progress","date":"2024-08-10","location":"Innovation Hub","category":"Hackathon","price":49,"availableSeats":200},{"id":"3","title":"Telecom Tower Maintenance","description":"Power module replacement","status":"Delayed","date":"2024-09-05","location":"Tower Site A","category":"Maintenance","price":299,"availableSeats":15}]}
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Corporate Office Network Setup",
+      "description": "Network configuration",
+      "status": "In Progress",
+      "date": "2024-07-15",
+      "location": "Downtown Center",
+      "category": "Workshop",
+      "price": 149,
+      "availableSeats": 45
+    },
+    {
+      "id": "2",
+      "title": "Annual Hackathon Launch",
+      "description": "Venue coordination",
+      "status": "In Progress",
+      "date": "2024-08-10",
+      "location": "Innovation Hub",
+      "category": "Hackathon",
+      "price": 49,
+      "availableSeats": 200
+    },
+    {
+      "id": "3",
+      "title": "Telecom Tower Maintenance",
+      "description": "Power module replacement",
+      "status": "Delayed",
+      "date": "2024-09-05",
+      "location": "Tower Site A",
+      "category": "Maintenance",
+      "price": 299,
+      "availableSeats": 15
+    }
+  ]
+}
