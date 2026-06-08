@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Corporate Office Network Setup",
+      "description": "Deploying structural local network configurations, routing switch installations, and secure firewalls.",
+      "status": "In Progress"
+    },
+    {
+      "id": "2",
+      "title": "Regional Fiber Backbone Link",
+      "description": "Splicing, terminal casing testing, and validation of the main transit fiber line connectivity.",
+      "status": "Completed"
+    },
+    {
+      "id": "3",
+      "title": "Tech Staging Site Audit",
+      "description": "Verifying backup power logistics, cooling units, and server rails for the regional operations unit.",
+      "status": "Completed"
+    },
+    {
+      "id": "4",
+      "title": "Annual Hackathon Launch",
+      "description": "Coordinating venue layouts, attendee registry pipelines, and setting up localized sandbox server access.",
+      "status": "In Progress"
+    },
+    {
+      "id": "5",
+      "title": "Fleet Tracking System Onboarding",
+      "description": "Integrating maintenance logs, asset handovers, and system dispatch schedules into the central dashboard.",
+      "status": "In Progress"
+    },
+    {
+      "id": "6",
+      "title": "Telecom Tower Hardware Maintenance",
+      "description": "Replacing power modules, conducting line sweeping, and optimizing transmission range limits.",
+      "status": "Delayed"
+    },
+    {
+      "id": "7",
+      "title": "Client Portal Code Review",
+      "description": "Auditing state updates, API endpoint integrations, and form submission validations for compliance.",
+      "status": "Completed"
+    },
+    {
+      "id": "8",
+      "title": "Database Schema Optimization",
+      "description": "Refactoring index distributions and cleaning up isolated keys across core application data stores.",
+      "status": "In Progress"
+    },
+    {
+      "id": "9",
+      "title": "Operational Compliance Verification",
+      "description": "Generating fiscal reports, reviewing logging frameworks, and aligning billing metrics with system records.",
+      "status": "Completed"
+    },
+    {
+      "id": "10",
+      "title": "User Experience Review Workshop",
+      "description": "Gathering dynamic dashboard feedback from users regarding responsive layout transitions and design features.",
+      "status": "Delayed"
+    }
+  ]
+}
