@@ -5,7 +5,7 @@ function AddProject() {
   const navigate = useNavigate();
 
   function handleAddProject(newEvent) {
-    fetch('http://localhost:3000/events', {
+    fetch('http://localhost:5001/events', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newEvent)
@@ -16,7 +16,7 @@ function AddProject() {
       })
       .then(() => {
         alert('Event added successfully!');
-        navigate('/'); // Redirect back to the dashboard landing page
+        navigate('/');
       })
       .catch((err) => alert(err.message));
   }
@@ -24,7 +24,6 @@ function AddProject() {
   return (
     <div className="container form-page">
       <h2>Add a New Event</h2>
-      {/* Pass the submit handler function down as a prop */}
       <ProjectForm onAddProject={handleAddProject} />
     </div>
   );

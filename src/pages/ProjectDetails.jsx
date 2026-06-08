@@ -7,7 +7,7 @@ function ProjectDetails() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/events/${id}`)
+    fetch(`http://localhost:5001/events/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setEvent(data);

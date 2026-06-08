@@ -1,53 +1,39 @@
 import { useState } from 'react';
 
 function ProjectForm({ onAddProject }) {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [status, setStatus] = useState('In Progress');
+  const [formData, setFormData] = useState({
+    title: '',
+    description: '',
+    date: '',
+    location: '',
+    status: 'In Progress'
+  });
 
-  function handleSubmit(e) {
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (!title.trim() || !description.trim()) {
-      alert('Please fill out all fields.');
-      return;
-    }
-
-    // Call the parent function with the form values
-    onAddProject({ title, description, status });
-
-    // Reset fields
-    setTitle('');
-    setDescription('');
-    setStatus('In Progress');
-  }
+    onAddProject({
+      ...formData,
+      id: Date.now().toString()
+    });
+    setFormData({ title: '', description: '', date: '', location: '', status: 'In Progress' });
+  };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
-      <label>Event Title</label>
-      <input 
-        type="text" 
-        value={title} 
-        onChange={(e) => setTitle(e.target.value)} 
-        placeholder="Enter title" 
-        required 
-      />
-
-      <label>Description</label>
-      <textarea 
-        value={description} 
-        onChange={(e) => setDescription(e.target.value)} 
-        placeholder="Enter details..." 
-        required 
-      />
-
-      <label>Status</label>
-      <select value={status} onChange={(e) => setStatus(e.target.value)}>
-        <option value="In Progress">In Progress</option>
-        <option value="Completed">Completed</option>
-        <option value="Delayed">Delayed</option>
+    <form onSubmit={handleSubmit}>
+      <input name="title" placeholder="Title" onChange={handleChange} value={formData.title} required />
+      <textarea name="description" placeholder="Description" onChange={handleChange} value={formData.description} />
+      <input name="date" type="date" onChange={handleChange} value={formData.date} />
+      <input name="location" placeholder="Location" onChange={handleChange} value={formData.location} />
+      <select name="status" onChange={handleChange} value={formData.status}>
+        <option>In Progress</option>
+        <option>Completed</option>
+        <option>Delayed</option>
       </select>
-
-      <button type="submit">Save Event</button>
+      <button type="submit">Add Event</button>
     </form>
   );
 }

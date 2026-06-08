@@ -7,7 +7,7 @@ function Home() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/events')
+    fetch('http://localhost:5001/events')
       .then((res) => {
         if (!res.ok) throw new Error('Could not fetch events.');
         return res.json();
@@ -35,7 +35,6 @@ function Home() {
 
       {isLoading && <p>Loading event board...</p>}
       {error && <p className="error">{error}</p>}
-      
       
       {!isLoading && !error && <ProjectList projects={events} />}
     </div>
