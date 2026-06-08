@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ProjectCard from '../components/ProjectCard';
+import ProjectList from '../components/ProjectList';
 
 function Home() {
   const [events, setEvents] = useState([]);
@@ -35,13 +35,9 @@ function Home() {
 
       {isLoading && <p>Loading event board...</p>}
       {error && <p className="error">{error}</p>}
-      {!isLoading && events.length === 0 && <p>No events logged yet.</p>}
-
-      <div className="grid">
-        {events.map((event) => (
-          <ProjectCard key={event.id} project={event} />
-        ))}
-      </div>
+      
+      {/* Dynamic List Rendering handled through props */}
+      {!isLoading && !error && <ProjectList projects={events} />}
     </div>
   );
 }
