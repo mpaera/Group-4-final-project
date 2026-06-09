@@ -32,6 +32,14 @@
       "category": "Maintenance",
       "price": 299,
       "availableSeats": 15
+    },
+    {
+      "id": "1780954326842",
+      "title": "Madaraka Day",
+      "description": "Indeppendence Day",
+      "date": "2026-06-01",
+      "location": "Nairobi",
+      "status": "Completed"
     }
   ]
 }
