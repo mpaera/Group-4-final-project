@@ -7,7 +7,7 @@ function Footer() {
       padding: '20px',
       marginTop: '40px'
     }}>
-      <p>&copy; 2024 Event Planner App. All rights reserved.</p>
+      <p>&copy; 2026 Event Planner App. All rights reserved.</p>
     </footer>
   );
 }
